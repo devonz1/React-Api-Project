@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Dancing+Script&family=Gloock&family=Nunito:wght@200&family=Smooch&display=swap');
+
+
+ body {
+  background-color: rgb(1, 48, 70) !important; /*this !important overwrites
+  the external imported file above so that the body element will be able to add 
+  the background color to the page .*/
+}
+
+ .create-form label{
+  color:whitesmoke
+  !important;
+  font-family:'Nunito', sans-serif ;
+  font-size: 15px
+  !important;
+   
+
+ }
+
+ .main-header{
+  color:white
+  !important; 
+  font-family: 'Nunito', sans-serif;
+  
+
+ }
+ .main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+ }
+
+  
