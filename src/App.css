@@ -7,6 +7,17 @@
   the background color to the page .*/
 }
 
+.Reading{
+  color: white;
+  text-align: center;
+}
+
+.upd{
+    color: white;
+    text-align: center;
+  }
+
+
  .create-form label{
   color:whitesmoke
   !important;
