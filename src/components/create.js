@@ -2,7 +2,7 @@
 import { Button, Checkbox, Form } from "semantic-ui-react";
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { redirect } from "react-router-dom";
 
 
 /// below we are initializing the states for the firstname lastname and
@@ -18,7 +18,11 @@ const Create = () => {
             firstName,
             lastName,
             checkbox
-        })
+
+        }
+        )
+
+
 
     } // here in the postData function we will be logging the first , last and
     // checkbox  values to the console. We will also use the postData function to send
@@ -34,22 +38,27 @@ const Create = () => {
         // the two functions setFirstname function and setLastname function will 
         // trigger react to re-render the component with the updated values. 
 
-        <div>
-            <Form className="create-form">
-                <Form.Field>
-                    <label>First Name</label>
-                    <input placeholder='First Name' onChange={(e) => setFirstName(e.target.value)} />
-                </Form.Field>
-                <Form.Field>
-                    <label>Last Name</label>
-                    <input placeholder='Last Name' onChange={(e) => setLastName(e.target.value)} />
-                </Form.Field>
-                <Form.Field>
-                    <Checkbox label='I agree to Shape Fitness Terms and Conditions' onChange={(e) => setCheckbox(!checkbox)} />
-                </Form.Field>
-                <Button onClick={postData} type='submit'>Submit</Button>
-            </Form>
-        </div>
+
+        <>
+            <div>
+                <Form className="create-form">
+                    <h2 className="Data">Create Data</h2>
+                    <Form.Field>
+                        <label>First Name</label>
+                        <input placeholder='First Name' onChange={(e) => setFirstName(e.target.value)} />
+                    </Form.Field>
+                    <Form.Field>
+                        <label>Last Name</label>
+                        <input placeholder='Last Name' onChange={(e) => setLastName(e.target.value)} />
+                    </Form.Field>
+                    <Form.Field>
+                        <Checkbox label='I agree to Shape Fitness Terms and Conditions' onChange={(e) => setCheckbox(!checkbox)} />
+                    </Form.Field>
+                    <Button onClick={postData} type='submit'>Submit</Button>
+                </Form>
+            </div>
+
+        </>
     )
 }
 export default Create;
