@@ -21,3 +21,8 @@ REACT
  #  SCREENSHOTS
  
  
+<img src = "pic 1.png">
+<img src = "read.png">
+<img src = "update.png">
+<img src = "data.png">
+
