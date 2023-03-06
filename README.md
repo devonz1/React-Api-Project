@@ -14,9 +14,9 @@ I made up  for the purpose of this Crud App. I used a Mock REST API to make the 
 
 
 #  TECHNOLOGY USED
-REACT ROUTER
-AXIOS LIBRARY
-REACT 
+REACT ROUTER<br>
+AXIOS LIBRARY<br>
+REACT <br>
 
  #  SCREENSHOTS
  
