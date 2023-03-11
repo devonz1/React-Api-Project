@@ -3,7 +3,7 @@ import { Button, Checkbox, Form } from "semantic-ui-react";
 import React, { useState } from 'react';
 import axios from 'axios';
 import { redirect } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 /// below we are initializing the states for the firstname lastname and
 //checkbox  with the useState hook 
@@ -13,21 +13,26 @@ const Create = () => {
     const [lastName, setLastName] = useState('');
     const [checkbox, setCheckbox] = useState(false);
 
+    const navigate = useNavigate();
     const postData = () => {
         axios.post(`https://63ffaf129f84491029832a21.mockapi.io/Members`, {
             firstName,
             lastName,
             checkbox
+        }).then(() => {
+            navigate('/read')
+        })
 
-        }
-        )
+
 
 
 
     } // here in the postData function we will be logging the first , last and
     // checkbox  values to the console. We will also use the postData function to send
     // data to the API.
-
+    //line 19 we use the useNavigate hook so once a user submits data sucessfully
+    //the page will automatically navigate to the read page so the user can view
+    /// the newly added data.
 
     return (
 

@@ -3,7 +3,7 @@ import { Button, Checkbox, Form } from "semantic-ui-react";
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
-
+import { useNavigate } from "react-router-dom";
 
 
 const Update = () => {
@@ -13,16 +13,18 @@ const Update = () => {
     const [checkbox, setCheckbox] = useState(false);
 
     const [id, setID] = useState(null);
-
+    const nav = useNavigate();
     const updateAPIData = () => {
         axios.put(`https://63ffaf129f84491029832a21.mockapi.io/Members/${id}`, {
             firstName,
             lastName,
             checkbox
-
-
-
+        }).then(() => {
+            nav('/read')
         })
+
+
+
     }
 
     ////line 17 when we click the button on the table from the read page
@@ -30,7 +32,9 @@ const Update = () => {
     //page we are pulling that data then we are storing that ID in the 
     //id state. then we attach the id to the endpoint this will help us 
     //update the field of where we are passing the id.
-
+    //line 22 we use the useNavigate hook so that when we update our 
+    // user data succesfully we will be taken to the read page to view
+    /// our updated data.
 
 
     useEffect(() => {

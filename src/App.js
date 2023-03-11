@@ -22,14 +22,12 @@ function App() {
        
     <img src={shapef} alt="logo" />  
        
-        </div>
-             
-             
+        </div>  
              
         <BrowserRouter>
          
           <Routes>
-          <Route exact path="/" element={<Create />} />
+          <Route exact path="/" element={<Create />} />  
             <Route path="/create" element={<Create />} />
             <Route path="/update" element={<Update />} />
             <Route path="/read" element={<Read />} />
@@ -44,3 +42,7 @@ function App() {
 }
 
 export default App;
+
+/// line 30 is the home page path where the app will start at once
+// you run the program the app will start on the create page thats what 
+/// "/" line is for. 
