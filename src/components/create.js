@@ -2,12 +2,14 @@
 import { Button, Checkbox, Form } from "semantic-ui-react";
 import React, { useState } from 'react';
 import axios from 'axios';
-import { redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 /// below we are initializing the states for the firstname lastname and
 //checkbox  with the useState hook 
 //starting out the firstname and lastname will be empty 
+/// line 12 firstname will be the variable to hold the firstname values that are typed
+//into the form field firstName and  setFirstname function 
+//is the setter that will allow us to update the first name
 const Create = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
