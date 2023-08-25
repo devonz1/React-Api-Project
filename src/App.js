@@ -1,5 +1,5 @@
 
-import shapef from "C:/Users/devon/Promineo/react-api-project/src/components/shapef.png";
+import shapef from "../src/images/shapef.png";
 import './App.css';
 import Create from './components/create';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

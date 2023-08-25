@@ -3,6 +3,8 @@ import { Button, Checkbox, Form } from "semantic-ui-react";
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import styles from "../create.module.css"
+ 
 
 /// below we are initializing the states for the firstname lastname and
 //checkbox  with the useState hook 
@@ -44,9 +46,10 @@ const Create = () => {
         /// and whenever someone types in their firstname or lastname
         // the two functions setFirstname function and setLastname function will 
         // trigger react to re-render the component with the updated values. 
-
-
-        <>
+       
+        
+       <> 
+ 
             <div>
                 <Form className="create-form">
                     <h2 className="Data">Create Data</h2>
@@ -64,8 +67,11 @@ const Create = () => {
                     <Button onClick={postData} type='submit'>Submit</Button>
                 </Form>
             </div>
-
-        </>
+          
+            </>
+        
+     
+        
     )
 }
 export default Create;

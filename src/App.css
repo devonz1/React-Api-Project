@@ -3,6 +3,7 @@
 
 body {
   background-color: rgb(1, 48, 70) !important;
+ 
   /*this !important overwrites
   the external imported file above so that the body element will be able to add 
   the background color to the page .*/
