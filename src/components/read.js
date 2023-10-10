@@ -56,7 +56,7 @@ const Read = () => {
 
 
         <div>
-            <h2 className='Reading'> Read Data</h2>
+          
             <Table compact celled definition>
                 <Table.Header>
                     <Table.Row>

@@ -2,8 +2,16 @@
 
 
 body {
-  background-color: rgb(1, 48, 70) !important;
- 
+   
+  background-image:url("images/fitbackgroundimg.jpg")  !important;
+  background-size: cover!important;
+  background-position:  center !important;
+  filter: contrast(100%)!important; 
+display: flex !important;
+justify-content:  center!important;
+align-items: center !important;
+ height: auto !important;
+ max-width: 100% !important;
   /*this !important overwrites
   the external imported file above so that the body element will be able to add 
   the background color to the page .*/
@@ -23,6 +31,7 @@ body {
   text-align: center;
 }
 
+ 
 
 .create-form label {
   color: whitesmoke !important;
@@ -45,4 +54,5 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background-size: cover;
 }

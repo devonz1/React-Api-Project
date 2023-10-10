@@ -16,13 +16,13 @@ import Navbar from "./components/navbar";
 function App() {
   return (
     <>
+    <body  >
       <div className="main">
-        <div>
-          
+      <img src={shapef} alt="logo" />  
        
-    <img src={shapef} alt="logo" />  
+     
        
-        </div>  
+        
              
         <BrowserRouter>
          
@@ -36,7 +36,7 @@ function App() {
           <br></br><Navbar />
         </BrowserRouter>
       </div>
-
+ </body>
     </>
   );
 }
